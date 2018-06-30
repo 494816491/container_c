@@ -615,7 +615,7 @@ int container_send_two_frame_video( Mal_StreamBlock *block, int is_next_is_key)
 
 int container_send_audio( Mal_StreamBlock *block)
 {
-    get_raw_stream_a(block->chn_num, block, block->);
+    get_raw_stream_a(block->chn_num, block, block->chn_num);
     return 0;
 }
 
